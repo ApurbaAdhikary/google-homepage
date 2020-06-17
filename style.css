@@ -3,17 +3,30 @@ body,ul {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    position: relative;
-    height: 100%;
 }
-html {
-    height: 100vh;
+html, body {
+    height: 100%;
+    width: 100%;
 }
 ul {
     list-style: none;
 }
 li {
     padding: 5px;
+}
+.nor a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #444444;
+}
+.nor a:hover{
+    text-decoration: underline;
+    color: #999999;
+}
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 header ul{
     display: flex;
@@ -25,7 +38,7 @@ a {
 }
 
 form input{
-    width: 500px;
+    width: 460px;
     height: 40px;
     border: 1px solid #cecece;
     border-radius: 20px;
@@ -50,6 +63,9 @@ header ul li img {
     margin-top: 20px;
     height: 36px;
 }
+.sbutton button:hover{
+    box-shadow: 0 1px 6px 0 #808080;
+}
 .sbutton button{
     width: 170px;
      margin:0px 5px ;
@@ -62,6 +78,7 @@ header ul li img {
 .lang {
     display: flex;
     align-items: center;
+    font-size: 0.8rem;
     
 }
 .lang ul{
@@ -73,7 +90,8 @@ hr {
     background-color:  #cecece;
 }
 footer{
-    margin-top: 170px;
+    position: fixed;
+    bottom: 0px;
     padding:15px;
     width: 100%;
     background-color: #f5f5f5;
